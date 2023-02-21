@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <!-- <TableLayout
+         android:visibility="gone"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/colorPrimaryDark">
+
+         <TableRow
+
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginRight="16dp"
+             android:paddingBottom="5dp"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingTop="30dp">
+
+             <TextView
+                 android:id="@+id/questionIs"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1"
+                 android:background="@drawable/roundedbutton"
+                 android:gravity="center"
+                 android:padding="16dp"
+                 android:text="@string/qes"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textStyle="bold" />
+
+             <EditText
+                 android:id="@+id/questionValueIS"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="2"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/roundedbutton"
+                 android:inputType="textLongMessage"
+                 android:padding="16dp"
+                 android:singleLine="true"
+                 android:text="Column vlaue"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+             />
+
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginRight="16dp"
+             android:paddingBottom="5dp"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingTop="5dp">
+
+             <TextView
+                 android:id="@+id/anwserIS"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1"
+                 android:background="@drawable/roundedbutton"
+                 android:gravity="center"
+                 android:padding="16dp"
+                 android:text="@string/ans"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textStyle="bold" />
+
+             <EditText
+                 android:id="@+id/anwserValue"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="2"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/roundedbutton"
+                 android:padding="16dp"
+                 android:text="Column vlaue"
+                 android:inputType="textMultiLine"
+                 android:singleLine="false"
+                 android:overScrollMode="always"
+                 android:scrollbarStyle="insideOverlay"
+                 android:scrollbars="horizontal"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+         </TableRow>
+
+         <TableRow
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingBottom="5dp"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingTop="5dp"
+             android:weightSum="2">
+
+             <Button
+                 android:id="@+id/updateData"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1"
+                 android:layout_weight="2"
+                 android:background="@drawable/roundedbutton"
+                 android:gravity="center"
+                 android:padding="16dp"
+                 android:text="@string/update"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:textStyle="bold" />
+         </TableRow>
+     </TableLayout>-->
+    <!--<Button
+        android:id="@+id/updateData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/update"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <LinearLayout
+        android:id="@+id/questionLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/questionIs"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/qes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/questionValueIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedbutton"
+            android:inputType="textLongMessage"
+            android:overScrollMode="always"
+            android:padding="16dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="horizontal"
+            android:singleLine="true"
+            android:text="Column vlaue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anserLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/anwserIS"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/ans"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/anwserValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/roundedbutton"
+            android:inputType="textLongMessage"
+            android:overScrollMode="always"
+            android:padding="16dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="horizontal"
+            android:singleLine="true"
+            android:text="Column vlaue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lenarbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--<Button
+            android:id="@+id/updateData"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />-->
+
+        <Button
+            android:id="@+id/updateData"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="@string/update"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

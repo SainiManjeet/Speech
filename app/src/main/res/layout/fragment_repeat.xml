@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/editTextRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/textview_shape"
+                android:gravity="center"
+                android:inputType="textLongMessage|textMultiLine"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/miceImgView"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/shareButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/micro_white"
+            android:visibility="visible" />
+        <!-- <com.gadgetsaint.viewpagerexample.utility.PlayGifView
+             android:id="@+id/viewGifrepeat"
+             android:layout_width="95dp"
+             android:layout_height="95dp"
+             android:layout_below="@+id/shareButton"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="25dp" />-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miceImgView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal"
+            android:text="TAP"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rl1"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_share_24dp"
+            android:text="Share"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/repeatImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_repeat_black_24dp" />
+
+        <ImageView
+            android:id="@+id/cancelImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/repeatImgView"
+            android:src="@drawable/ic_cancel_black_24dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

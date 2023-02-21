@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@drawable/border_bg"
+        android:layout_margin="10dp"
+        >
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/close_btn_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_arrow_back_green_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/search"
+                android:imeOptions="actionSend"
+                android:background="@android:color/transparent"
+                android:inputType="text" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/clear_btn_search_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="6dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="6dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_close_gary_24dp"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginEnd="6dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_view_layout_v"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/search_view_layout"
+        android:background="@drawable/below_shadow_rect" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/database_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_view_layout_v"
+        android:background="@color/colorPrimaryDark"
+        android:scrollbars="none"
+         />
+
+    <common_functions.RecyclerViewFastScroller
+        android:id="@+id/fastscroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/database_recycler_view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/database_recycler_view"
+        android:gravity="center"
+        android:visibility="visible" />
+</RelativeLayout>

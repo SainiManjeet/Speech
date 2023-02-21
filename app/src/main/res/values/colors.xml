@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- <color name="colorPrimary">#3CB8EC</color>-->
+
+
+ <color name="colorPrimary">#2fabdf</color>
+
+
+
+    <color name="colorPrimaryDark">#3CB8EC</color>
+    <color name="colorAccent1">#1a3bac</color>
+    <color name="colorAccent">#0000A0</color>
+
+ <color name="colorDarkBlue">#FF0A1B56</color>
+    <!--<color name="colorAccent">#FFF176</color>-->
+
+
+    <!--Color trial-->
+ <!--   <color name="colorPrimary">#DA614E</color>
+    <color name="colorPrimaryDark">#D32F2F</color>-->
+
+
+
+    <!--Manjeet color combination-->
+
+<!--    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#DA614E</color>
+    <color name="colorAccent">#000</color>-->
+
+
+    <color name="colorBlack">#000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="green">#FF48D32F</color>
+    <color name="gray">#636363</color>
+</resources>
